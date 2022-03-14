@@ -1,0 +1,27 @@
+<h2>Livres</h2>
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Couverture</th>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Prix</th>
+        <th>Action</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td><img alt="" src="{{book.img}}" style="width: 70px; height: 80px"></td>
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td>{{ book.price+"€" }}</td>
+        <td><button
+            class="btn btn-success" (click)="showInfo(book)">Détails</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
