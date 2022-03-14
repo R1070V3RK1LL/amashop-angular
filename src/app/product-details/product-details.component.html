@@ -1,9 +1,8 @@
 <div class="card">
-    <img src={{book.img}} alt="Denim Jeans" style="width:100%">
-    <h1>{{book.name}}</h1>
-    <p class="price">{{book.price}} €</p>
-    <p>{{book.description}}</p>
-    <p><button (click)="addToCart(book)">Ajouter au panier</button></p>
-    <p><button (click)="handleBack()">Retour</button></p>
-    
-  </div>
+  <img src="{{ book.img }}" alt="Denim Jeans" style="width: 100%" />
+  <h1>{{ book.name }}</h1>
+  <p class="price">{{ book.price }} €</p>
+  <p>{{ book.description }}</p>
+  <p><button (click)="addToCart(book)">Ajouter au panier</button></p>
+  <p><button (click)="handleBack()">Retour</button></p>
+</div>

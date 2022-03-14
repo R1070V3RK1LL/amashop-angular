@@ -8,17 +8,20 @@
         <th>Email</th>
         <th>Numéro de téléphone</th>
         <th>Plus d'informations</th>
-
       </tr>
     </thead>
 
     <tbody>
       <tr *ngFor="let user of users">
-        <td>{{user.name}}</td>
-        <td>{{user.username}}</td>
-        <td>{{ user.email}}</td>
-        <td>{{ user.phone}}</td>
-        <td><button class="btn btn-info" (click)="showInfo(user)">Afficher</button></td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>
+          <button class="btn btn-info" (click)="showInfo(user)">
+            Afficher
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

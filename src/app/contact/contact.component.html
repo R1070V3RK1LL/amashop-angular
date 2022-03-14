@@ -1,21 +1,32 @@
 <form [formGroup]="contactForm" (ngSubmit)="submit()">
-
-  <div class="form-group" >
+  <div class="form-group">
     <label for="email">Adresse électronique</label>
-    <input type="email" formControlName="email" class="form-control" placeholder="Enter email" id="email" required>
-    <small class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
+    <input
+      type="email"
+      formControlName="email"
+      class="form-control"
+      placeholder="Enter email"
+      id="email"
+      required
+    />
+    <small class="form-text text-muted"
+      >Nous ne partagerons jamais votre email.</small
+    >
   </div>
 
   <div class="form-group">
     <label>Message</label>
-    <textarea class="form-control" formControlName="message" placeholder="What do you want to tell us..."></textarea>
+    <textarea
+      class="form-control"
+      formControlName="message"
+      placeholder="What do you want to tell us..."
+    ></textarea>
   </div>
 
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input">
-    <label class="form-check-label" >Accepter de recevoir des promotions.</label>
+    <input type="checkbox" class="form-check-input" />
+    <label class="form-check-label">Accepter de recevoir des promotions.</label>
   </div>
 
   <button type="submit" class="btn btn-success">Envoyer</button>
-
 </form>

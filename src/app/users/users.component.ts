@@ -5,14 +5,13 @@ import { User } from '../models/user.model';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  styleUrls: ['./users.component.css'],
 })
 export class UsersComponent implements OnInit {
+  users: User[] = [];
+  router: Router;
 
-  users: User[] = []
-  router: Router
-
-  constructor(router: Router) { 
+  constructor(router: Router) {
     this.router = router;
   }
 
@@ -22,8 +21,7 @@ export class UsersComponent implements OnInit {
 
   showInfo(user: User): void {
     console.log({ user });
-    this.router.navigate(["user-details"]);
-    localStorage.setItem("currentUser", JSON.stringify(user))
+    this.router.navigate(['user-details']);
+    localStorage.setItem('currentUser', JSON.stringify(user));
   }
-
 }

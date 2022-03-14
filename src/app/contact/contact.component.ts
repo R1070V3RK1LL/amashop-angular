@@ -1,33 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder} from '@angular/forms';
-
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
+  constructor(private formBuilder: FormBuilder) {}
 
-  constructor(private formBuilder: FormBuilder) { }
-
-  private email: string = "";
-  private message: string = "";
+  private email: string = '';
+  private message: string = '';
 
   contactForm = this.formBuilder.group({
     email: this.email,
-    message:this.message
+    message: this.message,
   });
 
-
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   submit() {
     window.alert(
-      this.contactForm.get('email')?.value + '\n' +
-      this.contactForm.get('message')?.value + '\n' + "Merci de nous avoir contactés! Nous vons répondrons dans les plus brefs délais"
-    )
+      this.contactForm.get('email')?.value +
+        '\n' +
+        this.contactForm.get('message')?.value +
+        '\n' +
+        'Merci de nous avoir contactés! Nous vons répondrons dans les plus brefs délais'
+    );
   }
 }
