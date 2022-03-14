@@ -4,7 +4,7 @@ import {BookListComponent} from "./book-list/book-list.component";
 import {BasketComponent} from "./basket/basket.component";
 import {ContactComponent} from "./contact/contact.component";
 import { UsersComponent } from './users/users.component';
-import { ProductDetailsComponent } from './product-info/product-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 
 

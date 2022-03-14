@@ -1,6 +1,6 @@
 <h2>Livres</h2>
 <div class="row">
-  <table class="table">
+  <table class="table table-striped text-center">
     <thead>
       <tr>
         <th>Couverture</th>
@@ -19,7 +19,7 @@
         <td>{{book.author}}</td>
         <td>{{ book.price+"€" }}</td>
         <td><button
-            class="btn btn-success" (click)="showInfo(book)">Détails</button></td>
+            class="btn btn-info" (click)="showInfo(book)">Détails</button></td>
 
       </tr>
     </tbody>

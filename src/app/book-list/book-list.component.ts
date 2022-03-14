@@ -36,7 +36,7 @@ export class BookListComponent implements OnInit {
   }
   showInfo(book: Book): void {
     console.log({ book });
-    this.router.navigate(["product-info"]);
+    this.router.navigate(["product-details"]);
     localStorage.setItem("currentBook", JSON.stringify(book))
   }
 }

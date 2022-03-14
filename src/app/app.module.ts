@@ -11,7 +11,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { BasketComponent } from './basket/basket.component';
 import { NavbarComponent } from './navbar/navbar.component'
 import { UsersComponent } from './users/users.component';
-import { ProductDetailsComponent } from './product-info/product-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 import { Book } from './models/book.model';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { User } from './models/user.model';
