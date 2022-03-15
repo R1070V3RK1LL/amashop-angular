@@ -9,6 +9,7 @@ import { User } from '../models/user.model';
 })
 export class UsersComponent implements OnInit {
   users: User[] = [];
+  p: number = 1;
   router: Router;
 
   constructor(router: Router) {

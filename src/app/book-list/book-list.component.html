@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let book of books">
+      <tr *ngFor="let book of books | paginate: { itemsPerPage: 5, currentPage: p }">
         <td>
           <img alt="" src="{{ book.img }}" style="width: 70px; height: 80px" />
         </td>
@@ -22,6 +22,7 @@
           <button class="btn btn-info" (click)="showInfo(book)">Détails</button>
         </td>
       </tr>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </tbody>
   </table>
 </div>

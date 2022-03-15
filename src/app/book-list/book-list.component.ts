@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class BookListComponent implements OnInit {
   books: Book[] = [];
   private router: Router;
+  p: number = 1;
 
   constructor(private store: Store<appState>, router: Router) {
     this.router = router;

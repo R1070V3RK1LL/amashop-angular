@@ -15,6 +15,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { Book } from './models/book.model';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { User } from './models/user.model';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { User } from './models/user.model';
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
